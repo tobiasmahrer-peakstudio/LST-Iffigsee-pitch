@@ -464,6 +464,12 @@ section { padding: 52px 0; }
   gap: 22px;
   align-items: stretch;
 }
+.price-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 400px));
+  justify-content: center;
+  max-width: 860px;
+  margin: 0 auto;
+}
 .price-card {
   background: var(--white);
   border-radius: var(--radius-lg);
