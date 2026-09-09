@@ -464,12 +464,6 @@ section { padding: 52px 0; }
   gap: 22px;
   align-items: stretch;
 }
-.price-grid-2 {
-  grid-template-columns: repeat(2, minmax(0, 400px));
-  justify-content: center;
-  max-width: 860px;
-  margin: 0 auto;
-}
 .price-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -477,12 +471,6 @@ section { padding: 52px 0; }
   border: 1px solid rgba(47,74,60,0.1);
   display: flex;
   flex-direction: column;
-}
-.price-card.featured {
-  background: var(--forest);
-  color: var(--cream);
-  transform: translateY(-8px);
-  box-shadow: var(--shadow);
 }
 .price-card .plan-name { font-weight: 800; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.7; margin-bottom: 6px; }
 .price-card .plan-price { font-size: 1.8rem; font-weight: 900; margin-bottom: 3px; }
@@ -493,31 +481,8 @@ section { padding: 52px 0; }
   color: var(--forest);
 }
 .price-card .plan-sub { font-size: 0.82rem; opacity: 0.75; margin-bottom: 14px; }
-.price-card .day-rates {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 8px;
-}
-.price-card .day-rate {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
-}
-.price-card .day-rate span { font-size: 0.85rem; opacity: 0.85; }
-.price-card .day-rate strong { font-size: 1.15rem; font-weight: 900; white-space: nowrap; }
-.price-card .output-label {
-  font-size: 0.68rem;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  opacity: 0.6;
-  margin: 4px 0 8px;
-}
 .price-card ul { list-style: none; padding: 0; margin: 0 0 16px; flex: 1; }
 .price-card li { padding: 6px 0; border-top: 1px solid rgba(47,74,60,0.08); font-size: 0.85rem; display: flex; gap: 8px; }
-.price-card.featured li { border-top-color: rgba(251,247,238,0.15); }
 .price-card .badge {
   align-self: flex-start;
   background: var(--sun);
@@ -536,9 +501,6 @@ section { padding: 52px 0; }
   padding-top: 10px;
   border-top: 1px dashed rgba(47,74,60,0.18);
 }
-.price-card.featured .plan-addon { border-top-color: rgba(251,247,238,0.25); }
-.price-card .btn { width: 100%; justify-content: center; }
-.price-card.featured .btn-primary { background: var(--sun); color: var(--forest); }
 .price-note {
   text-align: center;
   color: var(--forest-light);
@@ -581,6 +543,5 @@ footer {
   .concept-grid { grid-template-columns: 1fr; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .price-grid { grid-template-columns: 1fr; }
-  .price-card.featured { transform: none; }
   .nav-links { display: none; }
 }
